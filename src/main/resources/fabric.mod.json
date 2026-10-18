@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "weed6sarmorhud",
+  "version": "${version}",
+  "name": "weed6's Armor HUD",
+  "description": "Shows the durability left of each equipped armor piece as an in-game HUD, with the armor item displayed like in your inventory. Each piece can be repositioned (X / Y) and rescaled (sliders) from the Mod Menu.",
+  "authors": ["weedvi"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "icon": "assets/weed6sarmorhud/icon.png",
+  "entrypoints": {
+    "client": [
+      "com.weedvi.armorhud.ArmorHud"
+    ],
+    "modmenu": [
+      "com.weedvi.armorhud.config.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config": ">=21.11.153"
+  },
+  "recommends": {
+    "modmenu": ">=17.0.0"
+  }
+}
